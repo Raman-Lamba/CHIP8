@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+      {
+          "label": "compile",
+          "type": "shell",
+          "command": "/opt/homebrew/bin/g++-14",  // Use g++-14 compiler
+          "args": [
+              "-std=c++17",                        // Compile using C++17 standard
+              "-o",
+              "${fileBasenameNoExtension}",        // Output file name without extension
+              "${file}"                            // Input file
+          ],
+          "group": {
+              "kind": "build",
+              "isDefault": false
+          }
+      },
+      {
+          "label": "compile and run",
+          "type": "shell",
+          "command": "/opt/homebrew/bin/g++-14 -std=c++17 -o ${fileBasenameNoExtension} ${file} && ./${fileBasenameNoExtension}  < input1.txt > output1.txt", // Compile and then run the executable
+          "group": {
+              "kind": "build",
+              "isDefault": true                    // Set this as the default build task
+          }
+      }
+  ]
+}

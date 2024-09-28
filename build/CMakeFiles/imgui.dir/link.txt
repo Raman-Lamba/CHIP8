@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libimgui.a "CMakeFiles/imgui.dir/3rdParty/imgui-1.88/imgui.cpp.o" "CMakeFiles/imgui.dir/3rdParty/imgui-1.88/imgui_draw.cpp.o" "CMakeFiles/imgui.dir/3rdParty/imgui-1.88/imgui_tables.cpp.o" "CMakeFiles/imgui.dir/3rdParty/imgui-1.88/imgui_widgets.cpp.o" "CMakeFiles/imgui.dir/3rdParty/imgui-1.88/imgui_demo.cpp.o"
+/Library/Developer/CommandLineTools/usr/bin/ranlib libimgui.a
